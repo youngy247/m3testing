@@ -15,3 +15,12 @@ try {
 } catch (InvalidArgumentException $exception){
     echo 'valid operation with argument -1';
 }
+echo '<p></p>';
+try {
+    $result = multiplyByTwo( 'hello');
+    echo 'Invalid operation with argument "hello"';
+} catch (TypeError $exception){
+    echo 'valid operation with argument hello';
+} catch (Error $exception) {
+    echo 'Invalid operation with argument "hello"';
+}
