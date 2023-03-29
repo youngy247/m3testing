@@ -10,6 +10,8 @@ if ($result !=0){
 
 $result = multiplyByTwo(-1);
 
-if ($result != -2){
+try {$result = multiplyByTwo( -1);
+}
+catch (InvalidArgumentException $exception){
     echo 'Invalid operation';
 }
