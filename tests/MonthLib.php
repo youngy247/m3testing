@@ -26,7 +26,7 @@ class MonthLib extends TestCase
     {
         // Arrange
         $expected = 'December';
-        $month = 12;
+        $month = 2;
 
         // Act
         $result = nameOfMonth($month);
