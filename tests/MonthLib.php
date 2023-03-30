@@ -53,7 +53,7 @@ class MonthLib extends TestCase
         // Arrange
         $month = 'Barry';
         $this->expectException(TypeError::class);
-
+        $this->expectExceptionMessage('Argument #1 ($month) must be of type int');
         // Act
         $result = nameOfMonth($month);
     }
