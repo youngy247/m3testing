@@ -11,6 +11,14 @@ class MonthLib extends TestCase
 
     public function testNameOfMonth_Given1ReturnJanuary()
     {
+        // Arrange
+        $expected = 'January';
+        $month = 1;
 
+        // Act
+        $result = nameOfMonth($month);
+
+        // Assert - compare the expected result to the actual result
+        $this->assertEquals($expected, $result);
     }
 }
