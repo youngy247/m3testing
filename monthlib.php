@@ -8,6 +8,9 @@
  */
 function nameOfMonth(int $month): string
 {
+    if ($month < 1 || $month > 12) {
+        throw new OutOfBoundsException("Invalid month value: $month");
+    }
 
     $months = [
         'January',

@@ -34,4 +34,17 @@ class MonthLib extends TestCase
         // Assert - compare the expected result to the actual result
         $this->assertEquals($expected, $result);
     }
+
+    public function testNameOfMonth_Given0ThrowError()
+    {
+        // Arrange
+        $month = 0;
+        $this->expectException(OutOfBoundsException::class);
+
+        // Act
+        $result = nameOfMonth($month);
+
+        // Assert - compare the expected result to the actual result
+
+    }
 }
